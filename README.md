@@ -35,20 +35,27 @@
 
 ### 2. Labeled supervison and geologically-informed unsupervision
 * In the labeled supervison, we use the $L_{MSE}$ and $L_{MS-SSIM}$ to train the network with labeled synthetic training datasets.
-* In the **geologically-informed unsupervision**, we implement two unsupervised losses (**$L_{Isochron}$** and **$L_{Normal}$**) based on the geologically-informed priors.
+* In the **geologically-informed unsupervision**, we implement two unsupervised losses (**$L_{Isochron}$** and **$L_{Normal}$**) based on the geologically-informed priors. 
 * Beforing using the **$L_{Isochron}$** and **$L_{Normal}$**, we need to track the local horizon segments and estimate the normal vectors from seismic images. [ Details in the folder: {1.Strat_skeleton 2.track_local_horizon} ]
+* **Additionally, $L_{Isochron}$ and $L_{Normal}$ do not require labels, enabling incorporating the unlabeled field datasets for training.**
 
 <p align="center" width="100%">
 <img src="images/geologically_informed_loss.jpg"  width="60%" height="60%">
 </p>
 
 ### 3. Progressive model training
-<p align="center" ><b> $L_{total} = L_{MSE} + L_{MS-SSIM} + L_{Isochron} + L_{Normal}$ </b></p>
+<p align="center" > $L_{final} = \lambda_1 \cdot L_{MSE} + \lambda_2 \cdot L_{MS-SSIM} + \lambda_3 \cdot L_{Isochron} + \lambda_4 \cdot L_{Normal}$ </p>
 
-* 
+* In the training stage-1, we only use the $L_{MSE}$ and $L_{MS-SSIM}$ for pre-train the network with labeled synthetic datasets. ($\lambda_1 = 0.8, \lambda_2 = 0.2, \lambda_3 = \lambda_4 = 0 $)
+* In the training stage-2, we introduce $L_{Isochron}$ and $L_{Normal}$ for further train the network after stage-1 with labeled synthetic datasets. ($\lambda_1 = 0.8, \lambda_2 = 0.2, \lambda_3 = 0.1, \lambda_4 = 10 $)
+* In the final training stage-3, we incorporate the unlabeled field datasets for LoRA fine-tuning with $L_{Isochron}$ and $L_{Normal}$. ($\lambda_1 = \lambda_2 = 0, \lambda_3 = 0.1, \lambda_4 = 10 $)
+* The predicted results are progressively improved during the different training stages. 
 
+<p align="center" width="100%">
+<img src="images/progressive_training.jpg"  width="80%" height="80%">
+</p>
 
-
+### 4. Fully seismic stratigraphic interpretation
 
 
 
