@@ -30,7 +30,7 @@
 * In the updated workflow, **geological forward modeling** contians SFM with [PyBadlands](https://github.com/badlands-model/badlands) and adding folding (& faulting) stuctures [(Wu et al., Geophysics, 2020)](https://library.seg.org/doi/10.1190/geo2019-0375.1), while **geophysical forward modeling** contains building realistic porosity model, Biot-Gassmann theory, depth-to-time conversion, and building synthetic seismic images.
 
 <p align="center" width="100%">
-<img src="images/FM.jpg"  width="90%" height="90%">
+<img src="images/2.jpg"  width="90%" height="90%">
 </p>
 
 ### 2. Labeled supervison and geologically-informed unsupervision
@@ -40,7 +40,7 @@
 * **Additionally, $L_{Isochron}$ and $L_{Normal}$ do not require labels, enabling incorporating the unlabeled field datasets for training.**
 
 <p align="center" width="100%">
-<img src="images/geologically_informed_loss.jpg"  width="60%" height="60%">
+<img src="images/3.jpg"  width="70%" height="70%">
 </p>
 
 ### 3. Progressive model training
@@ -52,14 +52,26 @@
 * The predicted results are progressively improved during the different training stages. 
 
 <p align="center" width="100%">
-<img src="images/progressive_training.jpg"  width="80%" height="80%">
+<img src="images/4.jpg"  width="80%" height="80%">
 </p>
 
 ### 4. Fully seismic stratigraphic interpretation
 
+* After estimating fully horizon volume (RGT), we can easily achieve the seismic stratigraphic interpretation.
 
+<p align="center" width="100%">
+<img src="images/5.jpg"  width="80%" height="80%">
+</p>
 
+---------------------
 
+### References
+[1] Gao, H., Wu, X., Zhang, J., Sun, X. & Bi, Z. Clinoformnet-1.0: stratigraphic forward modeling and deep learning for seismic clinoform delineation. Geoscientific Model Development 16, 2495–2513 (2023).
 
- 
+[2] Salles, T., Ding, X. & Brocard, G. pybadlands: A framework to simulate sediment transport, landscape dynamics and basin stratigraphic evolution through space and time. PloS one 13, e0195557 (2018).
+
+[3] Ding, X., Salles, T., Flament, N. & Rey, P. Quantitative stratigraphic analysis in a source-to- sink numerical framework. Geoscientific Model Development 12, 2571–2585 (2019).
+
+[4] Wu, X. et al. Building realistic structure models to train convolutional neural networks for seismic structural interpretation. Geophysics 85, WA27–WA39 (2020).
+
 
