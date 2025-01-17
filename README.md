@@ -26,7 +26,7 @@
 
 ## 🌟 An intelligent geologically-informed and data-driven approach for fully seismic stratigraphic interpretation of sedimentary basin
 ### 1. Stratigraphic and geophysical forward modeling
-* The geological and geophysical forward modeling workflow are modified from [**ClinoformNet**](https://github.com/huigcig/ClinoformNet) (Gao et al.,GMD, 2023). [![DOI](https://img.shields.io/badge/DOI-%7Bdoi.org%2F10.5194%2Fgmd%2016%202495%202023%7D-3480bc)](https://gmd.copernicus.org/articles/16/2495/2023/)
+* The geological and geophysical forward modeling workflow are modified from [ClinoformNet](https://github.com/huigcig/ClinoformNet) (Gao et al.,GMD, 2023). [![DOI](https://img.shields.io/badge/DOI-%7Bdoi.org%2F10.5194%2Fgmd%2016%202495%202023%7D-3480bc)](https://gmd.copernicus.org/articles/16/2495/2023/)
 * In the updated workflow, **geological forward modeling** contians SFM with [PyBadlands](https://github.com/badlands-model/badlands) and adding folding (& faulting) stuctures [(Wu et al., Geophysics, 2020)](https://library.seg.org/doi/10.1190/geo2019-0375.1), while **geophysical forward modeling** contains building realistic porosity model, Biot-Gassmann theory, depth-to-time conversion, and building synthetic seismic images.
 * **The labeled synthetic seismic datasets** are publicly available at [Zenodo](https://doi.org/10.5281/zenodo.14678398).
 
@@ -38,7 +38,7 @@
 * In the labeled supervison, we use the $L_{MSE}$ and $L_{MS-SSIM}$ to train the network with labeled synthetic training datasets.
 * In the **geologically-informed unsupervision**, we implement two unsupervised losses (**$L_{Isochron}$** and **$L_{Normal}$**) based on the geologically-informed priors. 
 * Beforing using the **$L_{Isochron}$** and **$L_{Normal}$**, we need to track the local horizon segments and estimate the normal vectors from seismic images. [ Details in the folder: {1.Strat_skeleton 2.track_local_horizon} ]
-* **Additionally, $L_{Isochron}$ and $L_{Normal}$ do not require labels, enabling incorporating the unlabeled field datasets for training.**
+* **Additionally, $L_{Isochron}$ and $L_{Normal}$ do not require labels**, enabling incorporating the unlabeled field datasets for training.
 
 <p align="center" width="100%">
 <img src="images/3.jpg"  width="70%" height="70%">
