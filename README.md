@@ -25,13 +25,17 @@
 ----------------------------------
 
 ## 🌟 An intelligent geologically-informed and data-driven approach for fully seismic stratigraphic interpretation of sedimentary basin
+<p align="center" width="100%">
+<img src="images/2.jpg"  width="80%" height="80%">
+</p>
+
 ### 1. Stratigraphic and geophysical forward modeling
 * The geological and geophysical forward modeling workflow are modified from [ClinoformNet](https://github.com/huigcig/ClinoformNet) (Gao et al.,GMD, 2023). [![DOI](https://img.shields.io/badge/DOI-%7Bdoi.org%2F10.5194%2Fgmd%2016%202495%202023%7D-3480bc)](https://gmd.copernicus.org/articles/16/2495/2023/)
 * In the updated workflow, **geological forward modeling** contians SFM with [PyBadlands](https://github.com/badlands-model/badlands) and adding folding (& faulting) stuctures [(Wu et al., Geophysics, 2020)](https://library.seg.org/doi/10.1190/geo2019-0375.1), while **geophysical forward modeling** contains building realistic porosity model, Biot-Gassmann theory, depth-to-time conversion, and building synthetic seismic images.
 * **The labeled synthetic seismic datasets** are publicly available at [Zenodo](https://doi.org/10.5281/zenodo.14678398).
 
 <p align="center" width="100%">
-<img src="images/2.jpg"  width="80%" height="80%">
+<img src="images/3.jpg"  width="80%" height="80%">
 </p>
 
 ### 2. Labeled supervison and geologically-informed unsupervision
@@ -41,7 +45,7 @@
 * **Additionally, $L_{Isochron}$ and $L_{Normal}$ do not require labels**, enabling incorporating the unlabeled field datasets for training.
 
 <p align="center" width="100%">
-<img src="images/3.jpg"  width="90%" height="90%">
+<img src="images/4.jpg"  width="90%" height="90%">
 </p>
 
 ### 3. Progressive model training
@@ -53,7 +57,7 @@
 * The predicted results are progressively improved during the different training stages. 
 
 <p align="center" width="100%">
-<img src="images/4.jpg"  width="80%" height="80%">
+<img src="images/5.jpg"  width="80%" height="80%">
 </p>
 
 ### 4. Fully seismic stratigraphic interpretation
@@ -61,7 +65,7 @@
 * After estimating fully horizon volume (RGT), we can easily achieve the seismic stratigraphic interpretation.
 
 <p align="center" width="100%">
-<img src="images/5.jpg"  width="85%" height="85%">
+<img src="images/6.jpg"  width="85%" height="85%">
 </p>
 
 ---------------------
