@@ -24,10 +24,11 @@
 
 ----------------------------------
 
-## 🌟 An intelligent geologically-informed and data-driven approach for fully seismic stratigraphic interpretation of sedimentary basin
+## 🌟 A Geologically Informed and Data-Driven AI Workflow for Fully Seismic Stratigraphic Interpretation of Sedimentary Basin
 <p align="center" width="100%">
 <img src="images/2.jpg"  width="80%" height="80%">
 </p>
+**2025.6.26:** 🌟🌟🌟 The paper has been published on IEEE Transactions on Geoscience and Remote Sensing (IEEE-TGRS). [Links](https://ieeexplore.ieee.org/document/11052734).
 
 ### 1. Stratigraphic and geophysical forward modeling
 * The geological and geophysical forward modeling workflow are modified from [ClinoformNet](https://github.com/huigcig/ClinoformNet) (Gao et al.,GMD, 2023). [![DOI](https://img.shields.io/badge/DOI-%7Bdoi.org%2F10.5194%2Fgmd%2016%202495%202023%7D-3480bc)](https://gmd.copernicus.org/articles/16/2495/2023/)
