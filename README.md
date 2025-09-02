@@ -28,7 +28,8 @@
 <p align="center" width="100%">
 <img src="images/2.jpg"  width="80%" height="80%">
 </p>
-**2025.6.26:** 🌟🌟🌟 The paper has been published on IEEE Transactions on Geoscience and Remote Sensing (IEEE-TGRS). [Links](https://ieeexplore.ieee.org/document/11052734).
+
+**2025.6.26:** 🌟🌟🌟 The paper has been published on IEEE Transactions on Geoscience and Remote Sensing (IEEE-TGRS). [[Links]](https://ieeexplore.ieee.org/document/11052734) (Gao et al.,IEEE TGRS,2025).
 
 ### 1. Stratigraphic and geophysical forward modeling
 * The geological and geophysical forward modeling workflow are modified from [ClinoformNet](https://github.com/huigcig/ClinoformNet) (Gao et al.,GMD, 2023). [![DOI](https://img.shields.io/badge/DOI-%7Bdoi.org%2F10.5194%2Fgmd%2016%202495%202023%7D-3480bc)](https://gmd.copernicus.org/articles/16/2495/2023/)
@@ -72,12 +73,14 @@
 ---------------------
 
 ### References
-[1] Gao, H., Wu, X., Zhang, J., Sun, X. & Bi, Z. Clinoformnet-1.0: stratigraphic forward modeling and deep learning for seismic clinoform delineation. Geoscientific Model Development 16, 2495–2513 (2023).
+[1] Gao H, Wu X & Ding X. A Geologically-Informed and Data-Driven AI Workflow for Fully Seismic Stratigraphic Interpretation of Sedimentary Basin. IEEE Transactions on Geoscience and Remote Sensing, Vol. 63, 5917413 (2025).
 
-[2] Salles, T., Ding, X. & Brocard, G. pybadlands: A framework to simulate sediment transport, landscape dynamics and basin stratigraphic evolution through space and time. PloS one 13, e0195557 (2018).
+[2] Gao, H., Wu, X., Zhang, J., Sun, X. & Bi, Z. Clinoformnet-1.0: stratigraphic forward modeling and deep learning for seismic clinoform delineation. Geoscientific Model Development 16, 2495–2513 (2023).
 
-[3] Ding, X., Salles, T., Flament, N. & Rey, P. Quantitative stratigraphic analysis in a source-to- sink numerical framework. Geoscientific Model Development 12, 2571–2585 (2019).
+[3] Salles, T., Ding, X. & Brocard, G. pybadlands: A framework to simulate sediment transport, landscape dynamics and basin stratigraphic evolution through space and time. PloS one 13, e0195557 (2018).
 
-[4] Wu, X. et al. Building realistic structure models to train convolutional neural networks for seismic structural interpretation. Geophysics 85, WA27–WA39 (2020).
+[4] Ding, X., Salles, T., Flament, N. & Rey, P. Quantitative stratigraphic analysis in a source-to- sink numerical framework. Geoscientific Model Development 12, 2571–2585 (2019).
+
+[5] Wu, X. et al. Building realistic structure models to train convolutional neural networks for seismic structural interpretation. Geophysics 85, WA27–WA39 (2020).
 
 
