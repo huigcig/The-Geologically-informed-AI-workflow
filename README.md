@@ -94,6 +94,6 @@ If you find this work helpful in your research, please cite:
           number={63},
           pages{5917413},
           year={2025},
-          publisher={IEEE}
+          publisher={IEEE},
           doi={10.1109/TGRS.2025.3583211},
         }
