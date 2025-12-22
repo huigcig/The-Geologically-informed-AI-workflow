@@ -83,4 +83,17 @@
 
 [5] Wu, X. et al. Building realistic structure models to train convolutional neural networks for seismic structural interpretation. Geophysics 85, WA27–WA39 (2020).
 
+--------------------
 
+If you find this work helpful in your research, please cite:
+
+        @article{gao2025geologically,
+          title={A Geologically-Informed and Data-Driven AI Workflow for Fully Seismic Stratigraphic Interpretation of Sedimentary Basin},
+          author={Gao, Hui and Wu, Xinming and Ding, Xuesong},
+          journal={IEEE Transactions on Geoscience and Remote Sensing},
+          number={63},
+          pages{5917413},
+          year={2025},
+          publisher={IEEE}
+          doi={10.1109/TGRS.2025.3583211},
+        }
